@@ -2,16 +2,22 @@ import React from 'react';
 import ChildrenProps from './ChildrenProps';
 import Layout from './Layout';
 
-interface PageProps extends ChildrenProps {
+export interface PageProps extends ChildrenProps {
   title?: string;
+  pageTitle?: string;
 }
 
-function Page({ children, title }: PageProps) {
-  return <Layout title={title}>{children}</Layout>;
+function Page({ children, title, pageTitle }: PageProps) {
+  return (
+    <Layout title={title || pageTitle}>
+      {pageTitle && (
+        <div className="w-full text-center">
+          <h1 className="w-full pb-4">{pageTitle}</h1>
+        </div>
+      )}
+      {children}
+    </Layout>
+  );
 }
-
-Page.defaultProps = {
-  title: 'Luke Shay',
-};
 
 export default Page;

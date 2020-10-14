@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import ChildrenProps from './ChildrenProps';
 
-interface LayoutProps extends ChildrenProps {
+export interface LayoutProps extends ChildrenProps {
   title?: string;
 }
 
@@ -10,17 +10,19 @@ function Layout({ children, title }: LayoutProps) {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title === '' || !title ? 'Luke Shay' : title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      {children}
+      <div className="w-full flex items-center justify-center">
+        <div className="w-full max-w-screen-xl pt-24 p-4 mx-2 xl:mx-0">{children}</div>
+      </div>
     </>
   );
 }
 
 Layout.defaultProps = {
-  title: 'Luke Shay',
+  title: '',
 };
 
 export default Layout;

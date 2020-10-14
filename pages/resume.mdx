@@ -20,13 +20,7 @@ export function SubSection({ title, location, date, info }) {
 }
 
 export default function ({ children }) {
-  return (
-    <Page title="Resume">
-      <div className="w-full flex items-center justify-center">
-        <div className="w-full max-w-screen-xl p-4 mx-2 xl:mx-0">{children}</div>
-      </div>
-    </Page>
-  );
+  return <Page pageTitle="My Resume">{children}</Page>;
 }
 
 <Section>Objective</Section>

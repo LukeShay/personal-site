@@ -1,5 +1,5 @@
 import React from 'react';
-import { LogoProps } from './logo-props';
+import LogoProps from './logo-props';
 
 function GitLabLogo({ size, className }: LogoProps) {
   return (
