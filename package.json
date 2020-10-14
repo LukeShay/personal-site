@@ -20,6 +20,8 @@
     "format": "yarn lint --fix"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.18",
+    "@next/mdx": "^9.5.5",
     "@tailwindcss/ui": "^0.6.2",
     "@testing-library/dom": "^7.24.5",
     "@testing-library/jest-dom": "^5.11.4",
@@ -46,6 +48,7 @@
     "next": "9.5.4",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.1.2",
+    "raw-loader": "^4.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-test-renderer": "^16.13.1",

@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import Logo from './logos/VercelLogo';
 import { Paths } from '../lib/paths';
 import LinkedinLogo from './logos/LinkedinLogo';
@@ -46,14 +45,19 @@ function NavBar() {
         </div>
         <div className="hidden md:flex w-auto flex-grow items-center">
           <div className="text-sm flex-grow">
-            <Link href="#">
+            <Link href={Paths.PROJECTS}>
               <a className="inline-block text-sm px-4 py-2 text-gray-500 hover:text-indigo-500 leading-none rounded mr-4 transition duration-150 ease-in-out">
                 About
               </a>
             </Link>
-            <Link href="#">
+            <Link href={Paths.PROJECTS}>
               <a className="inline-block text-sm px-4 py-2 text-gray-500 hover:text-indigo-500 leading-none rounded mr-4 transition duration-150 ease-in-out">
-                Documentation
+                Resume
+              </a>
+            </Link>
+            <Link href={Paths.PROJECTS}>
+              <a className="inline-block text-sm px-4 py-2 text-gray-500 hover:text-indigo-500 leading-none rounded mr-4 transition duration-150 ease-in-out">
+                Projects
               </a>
             </Link>
           </div>
@@ -118,14 +122,14 @@ function NavBar() {
                     Home
                   </a>
                 </Link>
-                <Link href="#">
+                <Link href={Paths.PROJECTS}>
                   <a
                     href="#"
                     className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 leading-none hover:text-indigo-500 transition duration-150 ease-in-out"
                     role="menuitem"
                     onClick={handleClick}
                   >
-                    About
+                    Projects
                   </a>
                 </Link>
                 <Link href="#">
