@@ -1,5 +1,6 @@
-export default interface Meta {
+export default interface ProjectMeta {
   title: string;
   author: string;
   description: string;
+  repo: string;
 }

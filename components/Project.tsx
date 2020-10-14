@@ -2,12 +2,12 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import ChildrenProps from './ChildrenProps';
-import Meta from '../lib/meta';
+import ProjectMeta from '../lib/project-meta';
 import projects from '../lib/projects';
 import Layout from './Layout';
 
 interface PostProps extends ChildrenProps {
-  meta: Meta;
+  meta: ProjectMeta;
 }
 
 function Project({ children, meta }: PostProps) {
@@ -41,7 +41,11 @@ function Project({ children, meta }: PostProps) {
           <article className="w-full">
             <div className="w-full text-center">
               <h1 className="w-full">{meta.title}</h1>
-              <h5 className="w-full">{meta.description}</h5>
+              <div className="w-full font-light italic font-serif pt-2 pb-3 mt-1 mb-3 border-b border-gray-200">
+                <a href={meta.repo} target="_blank" rel="noreferrer">
+                  {meta.repo}
+                </a>
+              </div>
             </div>
             {children}
           </article>
