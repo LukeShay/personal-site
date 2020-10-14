@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`error should match snapshot 1`] = `
-<h1>
-  Uh oh, You went somewhere that doesn't exist!
-</h1>
-`;

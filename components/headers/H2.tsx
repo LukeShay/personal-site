@@ -1,5 +1,5 @@
 import React from 'react';
-import { CommonProps } from './CommonProps';
+import { CommonProps } from '../CommonProps';
 
 function H2({ className, children }: CommonProps) {
   return (
