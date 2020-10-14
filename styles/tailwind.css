@@ -5,3 +5,44 @@
 html {
   background-color: #f4f5f7;
 }
+
+h1 {
+  @apply text-4xl;
+  @apply leading-9;
+  @apply font-extrabold;
+  @apply text-gray-900;
+}
+
+h2 {
+  @apply text-3xl;
+  @apply leading-9;
+  @apply font-extrabold;
+  @apply text-gray-900;
+}
+
+h3 {
+  @apply text-2xl;
+  @apply leading-9;
+  @apply font-extrabold;
+  @apply text-gray-900;
+}
+
+h4 {
+  @apply text-xl;
+  @apply leading-9;
+  @apply font-extrabold;
+  @apply text-gray-900;
+}
+
+h5 {
+  @apply text-lg;
+  @apply leading-9;
+  @apply font-extrabold;
+  @apply text-gray-900;
+}
+
+h6 {
+  @apply font-medium;
+  @apply leading-9;
+  @apply text-gray-900;
+}

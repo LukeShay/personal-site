@@ -1,12 +1,14 @@
 import React from 'react';
 import Centered from '../components/Centered';
-import H2 from '../components/headers/H2';
+import Page from '../components/Page';
 
 function Home() {
   return (
-    <Centered>
-      <H2>Home Page</H2>
-    </Centered>
+    <Page>
+      <Centered>
+        <h2>Home Page</h2>
+      </Centered>
+    </Page>
   );
 }
 
