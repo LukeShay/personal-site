@@ -50,7 +50,7 @@ function NavBar() {
                 About
               </a>
             </Link>
-            <Link href={Paths.PROJECTS}>
+            <Link href={Paths.RESUME}>
               <a className="inline-block text-sm px-4 py-2 text-gray-500 hover:text-indigo-500 leading-none rounded mr-4 transition duration-150 ease-in-out">
                 Resume
               </a>

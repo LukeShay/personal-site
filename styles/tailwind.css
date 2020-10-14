@@ -46,3 +46,12 @@ h6 {
   @apply leading-9;
   @apply text-gray-900;
 }
+
+ul {
+  @apply list-disc;
+  @apply pl-4;
+}
+
+ol {
+  @apply list-decimal;
+}
