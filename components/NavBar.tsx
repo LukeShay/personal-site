@@ -15,71 +15,74 @@ function NavBar() {
 
   return (
     <div>
-      <nav className="flex items-center justify-between flex-wrap bg-white py-3 px-6 mb-8">
-        <Link href={Paths.HOME}>
-          <div
-            aria-label="Home"
-            className="flex items-center flex-shrink-0 text-gray-500 mr-6 cursor-pointer"
-          >
-            <Logo size={130} className="mr-4" />
+      <div className="flex bg-white border-b border-gray-200 fixed top-0 inset-x-0 z-100 h-16 items-center">
+        <div className="w-full max-w-screen-xl relative mx-auto px-6">
+          <div>
+            <nav className="flex items-center -mx-6 justify-between">
+              <div className="px-6">
+                <Link href={Paths.HOME}>
+                  <div
+                    aria-label="Home"
+                    className="flex items-center flex-shrink-0 text-gray-500 mr-6 cursor-pointer"
+                  >
+                    <h4 className="text-indigo-500">Luke Shay</h4>
+                  </div>
+                </Link>
+              </div>
+              <div className="md:hidden">
+                <button
+                  className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-500 hover:text-indigo-500 hover:border-gray-900"
+                  type="button"
+                  id="main-menu"
+                  aria-label="Main menu"
+                  aria-haspopup="true"
+                  onClick={handleClick}
+                >
+                  <svg
+                    className="fill-current h-3 w-3"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/5000/svg"
+                  >
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                  </svg>
+                </button>
+              </div>
+              <div className="hidden md:flex flex-grow min-w-0 lg:w-3/4 xl:w-4/5">
+                <div className="w-full min-w-0">
+                  <Link href={Paths.RESUME}>
+                    <a className="inline-block text-sm px-4 py-2 text-gray-500 hover:text-indigo-500 leading-none rounded mr-4 transition duration-150 ease-in-out">
+                      Resume
+                    </a>
+                  </Link>
+                  <Link href={Paths.PROJECTS}>
+                    <a className="inline-block text-sm px-4 py-2 text-gray-500 hover:text-indigo-500 leading-none rounded mr-4 transition duration-150 ease-in-out">
+                      Projects
+                    </a>
+                  </Link>
+                </div>
+                <div className="hidden md:flex md:items-center md:justify-between xl:w-1/4 px-6">
+                  <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/luke-shay">
+                    <div className="inline-block mr-4 cursor-pointer">
+                      <LinkedinLogo size={90} />
+                    </div>
+                  </a>
+                  <a target="_blank" rel="noreferrer" href="https://github.com/LukeShay">
+                    <div className="inline-block mr-4 cursor-pointer">
+                      <GitHubLogo size={25} />
+                    </div>
+                  </a>
+                  <a target="_blank" rel="noreferrer" href="https://gitlab.com/LukeShay">
+                    <div className="inline-block mr-4 cursor-pointer">
+                      <GitLabLogo size={25} />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </nav>
           </div>
-        </Link>
-        <div className="md:hidden">
-          <button
-            className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-500 hover:text-indigo-500 hover:border-gray-900"
-            type="button"
-            id="main-menu"
-            aria-label="Main menu"
-            aria-haspopup="true"
-            onClick={handleClick}
-          >
-            <svg
-              className="fill-current h-3 w-3"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/5000/svg"
-            >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
         </div>
-        <div className="hidden md:flex w-auto flex-grow items-center">
-          <div className="text-sm flex-grow">
-            <Link href={Paths.PROJECTS}>
-              <a className="inline-block text-sm px-4 py-2 text-gray-500 hover:text-indigo-500 leading-none rounded mr-4 transition duration-150 ease-in-out">
-                About
-              </a>
-            </Link>
-            <Link href={Paths.PROJECTS}>
-              <a className="inline-block text-sm px-4 py-2 text-gray-500 hover:text-indigo-500 leading-none rounded mr-4 transition duration-150 ease-in-out">
-                Resume
-              </a>
-            </Link>
-            <Link href={Paths.PROJECTS}>
-              <a className="inline-block text-sm px-4 py-2 text-gray-500 hover:text-indigo-500 leading-none rounded mr-4 transition duration-150 ease-in-out">
-                Projects
-              </a>
-            </Link>
-          </div>
-          <div className="md:mt-0 mt-2 pl-4">
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/luke-shay">
-              <div className="inline-block mr-4 cursor-pointer">
-                <LinkedinLogo size={90} />
-              </div>
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/LukeShay">
-              <div className="inline-block mr-4 cursor-pointer">
-                <GitHubLogo size={25} />
-              </div>
-            </a>
-            <a target="_blank" rel="noreferrer" href="https://gitlab.com/LukeShay">
-              <div className="inline-block mr-4 cursor-pointer">
-                <GitLabLogo size={25} />
-              </div>
-            </a>
-          </div>
-        </div>
-      </nav>
+      </div>
       {open && (
         <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
           <div className="rounded-lg shadow-md">
