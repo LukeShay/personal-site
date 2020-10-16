@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Logo from './logos/VercelLogo';
 import { Paths } from '../lib/paths';
 import LinkedinLogo from './logos/LinkedinLogo';
 import GitHubLogo from './logos/GitHubLogo';
@@ -21,10 +20,7 @@ function NavBar() {
             <nav className="flex items-center -mx-6 justify-between">
               <div className="mx-3 md:mx-6">
                 <Link href={Paths.HOME}>
-                  <div
-                    aria-label="Home"
-                    className="flex items-center flex-shrink-0 text-gray-500 mr-6 cursor-pointer"
-                  >
+                  <div aria-label="Home" className="mr-6 cursor-pointer">
                     <h4 className="text-indigo-500">Luke Shay</h4>
                   </div>
                 </Link>
@@ -93,9 +89,11 @@ function NavBar() {
               aria-labelledby="main-menu"
             >
               <div className="px-5 pt-4 flex items-center justify-between">
-                <div>
-                  <Logo size={40} />
-                </div>
+                <Link href={Paths.HOME}>
+                  <div aria-label="Home" className="cursor-pointer">
+                    <h4 className="text-indigo-500">Luke Shay</h4>
+                  </div>
+                </Link>
                 <div className="-mr-2">
                   <button
                     type="button"
@@ -115,16 +113,6 @@ function NavBar() {
                 </div>
               </div>
               <div className="px-2 pt-2 pb-3">
-                <Link href={Paths.HOME}>
-                  <a
-                    href="#"
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-500 leading-none hover:text-indigo-500 transition duration-150 ease-in-out"
-                    role="menuitem"
-                    onClick={handleClick}
-                  >
-                    Home
-                  </a>
-                </Link>
                 <Link href={Paths.RESUME}>
                   <a
                     href="#"

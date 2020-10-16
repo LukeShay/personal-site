@@ -41,7 +41,7 @@ function Home() {
         </div>
         <div className="w-full mt-14 md:mt-20">
           <div className="flex w-full justify-center">
-            <div className="text-center w-full max-w-screen-md">
+            <div className="text-center w-full max-w-screen-md mx-12 md:mx-0">
               <h1 className="tracking-tight font-medium leading-tight w-full">
                 I am currently exploring
               </h1>
