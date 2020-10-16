@@ -125,6 +125,16 @@ function NavBar() {
                     Home
                   </a>
                 </Link>
+                <Link href={Paths.RESUME}>
+                  <a
+                    href="#"
+                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 leading-none hover:text-indigo-500 transition duration-150 ease-in-out"
+                    role="menuitem"
+                    onClick={handleClick}
+                  >
+                    Resume
+                  </a>
+                </Link>
                 <Link href={Paths.PROJECTS}>
                   <a
                     href="#"
@@ -133,16 +143,6 @@ function NavBar() {
                     onClick={handleClick}
                   >
                     Projects
-                  </a>
-                </Link>
-                <Link href="#">
-                  <a
-                    href="#"
-                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 leading-none hover:text-indigo-500 transition duration-150 ease-in-out"
-                    role="menuitem"
-                    onClick={handleClick}
-                  >
-                    Documentation
                   </a>
                 </Link>
               </div>
