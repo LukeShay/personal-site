@@ -19,7 +19,7 @@ function NavBar() {
         <div className="w-full max-w-screen-xl relative mx-auto px-6">
           <div>
             <nav className="flex items-center -mx-6 justify-between">
-              <div className="px-6">
+              <div className="mx-3 md:mx-6">
                 <Link href={Paths.HOME}>
                   <div
                     aria-label="Home"
@@ -29,7 +29,7 @@ function NavBar() {
                   </div>
                 </Link>
               </div>
-              <div className="md:hidden">
+              <div className="md:hidden mr-3">
                 <button
                   className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-500 hover:text-indigo-500 hover:border-gray-900"
                   type="button"
