@@ -40,11 +40,12 @@ function Project({ children, meta }: PostProps) {
         <div className="w-2/3">
           <article className="w-full">
             <div className="w-full text-center">
-              <h1 className="w-full">{meta.title}</h1>
+              <a href={meta.repo} target="_blank" rel="noreferrer">
+                <h1 className="w-full">{meta.title}</h1>
+              </a>
               <div className="w-full font-light italic font-serif pt-2 pb-3 mt-1 mb-3 border-b border-gray-200">
-                <a href={meta.repo} target="_blank" rel="noreferrer">
-                  {meta.repo}
-                </a>
+                {meta.keywords &&
+                  meta.keywords.map((keyword, index) => `${index !== 0 ? ' | ' : ''}${keyword}`)}
               </div>
             </div>
             {children}

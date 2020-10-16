@@ -3,4 +3,5 @@ export default interface ProjectMeta {
   author: string;
   description: string;
   repo: string;
+  keywords: string[];
 }

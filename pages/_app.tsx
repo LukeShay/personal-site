@@ -1,4 +1,4 @@
-import '../styles/tailwind.css';
+import '../styles/main.css';
 import React from 'react';
 import { AppProps } from 'next/app';
 import NavBar from '../components/NavBar';
