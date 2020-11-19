@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@mdx-js/loader": "^1.6.21",
-    "@next/mdx": "^10.0.1",
+    "@next/mdx": "^10.0.2",
     "@tailwindcss/ui": "^0.7.2",
     "@testing-library/dom": "^7.27.0",
     "@testing-library/jest-dom": "^5.11.6",
