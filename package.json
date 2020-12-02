@@ -20,7 +20,7 @@
     "format": "yarn lint --fix"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.6.21",
+    "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.3",
     "@tailwindcss/ui": "^0.7.2",
     "@testing-library/dom": "^7.28.0",
