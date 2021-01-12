@@ -20,12 +20,14 @@ h3 {
   @apply text-2xl;
   @apply leading-9;
   @apply text-gray-900;
+  @apply font-semibold;
 }
 
 h4 {
   @apply text-xl;
   @apply leading-9;
   @apply text-gray-900;
+  @apply font-semibold;
 }
 
 h5 {
