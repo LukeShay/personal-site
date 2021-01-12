@@ -12,7 +12,7 @@ function Page({ children, title, pageTitle }: PageProps) {
     <Layout title={title || pageTitle}>
       {pageTitle && (
         <div className="w-full text-center">
-          <h1 className="w-full pb-4">{pageTitle}</h1>
+          <h1 className="w-full pb-4 font-bold">{pageTitle}</h1>
         </div>
       )}
       {children}
