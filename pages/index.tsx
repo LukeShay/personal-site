@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
-import DenoLogo from '../components/logos/DenoLogo';
-import GraphQLLogo from '../components/logos/GraphQLLogo';
+import SvelteLogo from '../components/logos/SvelteLogo';
+import KotlinLogo from '../components/logos/KotlinLogo';
 import NextJSLogo from '../components/logos/NextJSLogo';
 import ReactLogo from '../components/logos/ReactLogo';
 import TypeScriptLogo from '../components/logos/TypeScriptLogo';
@@ -20,7 +20,7 @@ function Home() {
             <div className="text-center max-w-screen-md">
               <h1 className="tracking-tight font-medium leading-tight w-full">
                 Student at Iowa State University{' '}
-                <span className="sm:block text-indigo-500 font-medium">
+                <span className="sm:block text-cyan-500 font-medium">
                   studying software engineering
                 </span>
               </h1>
@@ -39,33 +39,27 @@ function Home() {
             style={{ height: '190px', backgroundSize: '1440px 190px' }}
           />
         </div>
-        <div className="w-full mt-14 md:mt-20">
+        <div className="w-full pt-14 md:pt-20">
           <div className="flex w-full justify-center">
             <div className="text-center w-full max-w-screen-md mx-12 md:mx-0">
-              <h1 className="tracking-tight font-medium leading-tight w-full">
-                I am currently exploring
+              <h1 className="tracking-tight font-medium leading-tight w-full pb-4">
+                I am currently using
               </h1>
-              <div className="block md:flex w-full items-center justify-between">
-                <div className="flex w-full mt-6 md:w-2/5 justify-center">
-                  <div className="w-1/2 flex justify-center">
-                    <ReactLogo size={150} />
-                  </div>
-                  <div className="w-1/2 flex justify-center">
-                    <NextJSLogo size={120} />
-                  </div>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-14">
+                <div className="col-span-1 flex justify-center items-center">
+                  <ReactLogo className="max-h-28" />
                 </div>
-                <div className="flex w-full mt-6 md:w-2/5 justify-center">
-                  <div className="w-1/2 flex justify-center">
-                    <DenoLogo size={99} />
-                  </div>
-                  <div className="w-1/2 flex justify-center">
-                    <TypeScriptLogo size={78} />
-                  </div>
+                <div className="col-span-1 flex justify-center items-center">
+                  <NextJSLogo className="max-h-28" />
                 </div>
-                <div className="flex w-full mt-6 md:w-1/5 justify-center">
-                  <div className="w-full flex justify-center">
-                    <GraphQLLogo size={80} />
-                  </div>
+                <div className="col-span-1 flex justify-center items-center">
+                  <SvelteLogo className="max-h-28" />
+                </div>
+                <div className="col-span-1 flex justify-center items-center">
+                  <TypeScriptLogo className="max-h-28" />
+                </div>
+                <div className="col-span-2 md:col-span-1 flex justify-center items-center">
+                  <KotlinLogo className="max-h-28" />
                 </div>
               </div>
             </div>

@@ -21,13 +21,13 @@ function NavBar() {
               <div className="mx-3 md:mx-6">
                 <Link href={Paths.HOME}>
                   <div aria-label="Home" className="mr-6 cursor-pointer">
-                    <h4 className="text-indigo-500">Luke Shay</h4>
+                    <h3 className="text-cyan-500 font-bold">Luke Shay</h3>
                   </div>
                 </Link>
               </div>
               <div className="md:hidden mr-3">
                 <button
-                  className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-500 hover:text-indigo-500 hover:border-gray-900"
+                  className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-500 hover:text-cyan-500 hover:border-gray-900"
                   type="button"
                   id="main-menu"
                   aria-label="Main menu"
@@ -47,12 +47,12 @@ function NavBar() {
               <div className="hidden md:flex flex-grow min-w-0 lg:w-3/4 xl:w-4/5">
                 <div className="w-full min-w-0">
                   <Link href={Paths.RESUME}>
-                    <a className="inline-block text-sm px-4 py-2 text-gray-500 hover:text-indigo-500 leading-none rounded mr-4 transition duration-150 ease-in-out">
+                    <a className="inline-block pl-4 font-semibold py-2 text-gray-500 hover:text-cyan-500 leading-none rounded mr-4 transition duration-150 ease-in-out">
                       Resume
                     </a>
                   </Link>
                   <Link href={Paths.PROJECTS}>
-                    <a className="inline-block text-sm px-4 py-2 text-gray-500 hover:text-indigo-500 leading-none rounded mr-4 transition duration-150 ease-in-out">
+                    <a className="inline-block pl-4 font-semibold py-2 text-gray-500 hover:text-cyan-500 leading-none rounded mr-4 transition duration-150 ease-in-out">
                       Projects
                     </a>
                   </Link>
@@ -91,13 +91,13 @@ function NavBar() {
               <div className="px-5 pt-4 flex items-center justify-between">
                 <Link href={Paths.HOME}>
                   <div aria-label="Home" className="cursor-pointer">
-                    <h4 className="text-indigo-500">Luke Shay</h4>
+                    <h4 className="text-cyan-500">Luke Shay</h4>
                   </div>
                 </Link>
                 <div className="-mr-2">
                   <button
                     type="button"
-                    className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-indigo-500 focus:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out"
+                    className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-cyan-500 focus:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out"
                     aria-label="Close menu"
                     onClick={handleClick}
                   >
@@ -116,7 +116,7 @@ function NavBar() {
                 <Link href={Paths.RESUME}>
                   <a
                     href="#"
-                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 leading-none hover:text-indigo-500 transition duration-150 ease-in-out"
+                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 leading-none hover:text-cyan-500 transition duration-150 ease-in-out"
                     role="menuitem"
                     onClick={handleClick}
                   >
@@ -126,7 +126,7 @@ function NavBar() {
                 <Link href={Paths.PROJECTS}>
                   <a
                     href="#"
-                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 leading-none hover:text-indigo-500 transition duration-150 ease-in-out"
+                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 leading-none hover:text-cyan-500 transition duration-150 ease-in-out"
                     role="menuitem"
                     onClick={handleClick}
                   >

@@ -25,9 +25,9 @@ function Project({ children, meta }: PostProps) {
                     <a
                       className={`inline-block text-sm py-2 leading-none ${
                         router.pathname === project.path
-                          ? 'text-indigo-500 font-bold'
+                          ? 'text-cyan-500 font-bold'
                           : 'text-gray-700'
-                      } hover:text-indigo-500 transition duration-150 ease-in-out`}
+                      } hover:text-cyan-500 transition duration-150 ease-in-out`}
                     >
                       {project.title}
                     </a>
